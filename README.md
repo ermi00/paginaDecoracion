@@ -71,6 +71,8 @@ Despues automaticamente creara los 4 archivos principale para generar el compone
 
 Cambio para que lo vea Ivan.
 
+2do cambio para que lo mire Ivan.
+
 
 
 
