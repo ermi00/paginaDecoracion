@@ -52,16 +52,22 @@ Bloques de código: Usa tres acentos graves (```) en la línea anterior y poster
 
 ## Notas Personales
 
+Para inicar el proyecto que creamos tenemos 
+
+```
+ng serve -o
+```
+
+Si no funciona el comando recuerda ubicarte bien dentro de la carpeta del proyecto.
 
 Para genenerar un nuevo componente con Angular tenemos que ingresar el comando 
 "ng g c components/inicio"
-"ng g c nombreDeLaCarpeta/nombreDelComponente"
+
+```
+"ng g c nombreDelComponente"
+```
 
 Despues automaticamente creara los 4 archivos principale para generar el componente.
-
-Para inicar el proyecto que creamos tenemos ng serve -o
-
-Si no funciona el comando recuerda ubicarte bien dentro de la carpeta del proyecto.
 
 
 
