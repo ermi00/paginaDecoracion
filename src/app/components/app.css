@@ -1,0 +1,25 @@
+.fondoBarra{
+    background-color: darkmagenta;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/* @font-face {
+    font-family: "opciones";
+    src: url("../../../public/fonts/mainstay/Mainstay.otf");
+} */
+
+ul li a{
+    font-family: "opciones";
+    font-size: 20px;
+}
+
+nav{
+    background-color: blue;
+}
