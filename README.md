@@ -1,59 +1,68 @@
-# Decoracion
+# Pagina Decoracion
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.7.
+## Markdown
 
-## Development server
+1. Títulos y Encabezados
+Usa el símbolo de numeral (#) seguido de un espacio. La cantidad de numerales indica el nivel del título.
 
-To start a local development server, run:
+# Título 1 (El más grande, equivalente a H1)
 
-```bash
-ng serve
-```
+## Título 2 (Subtitulo)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Título 3 (Puedes usar hasta 6 niveles)
 
-## Code scaffolding
+2. Énfasis de Texto
+Negrita: Envuelve el texto con dos asteriscos: **texto en negrita**
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Cursiva: Envuelve el texto con un solo asterisco: *texto en cursiva*
 
-```bash
-ng generate component component-name
-```
+~~Tachado:~~ Envuelve el texto con dos virgulillas: ~~texto tachado~~
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Negrita y cursiva: Usa tres asteriscos: ***texto importante***
 
-```bash
-ng generate --help
-```
+3. Listas
+Listas con viñetas (desordenadas):
+Usa un guion (-), asterisco (*) o signo de suma (+) seguido de un espacio.
 
-## Building
+Markdown
+- Primer elemento
+- Segundo elemento
+  - Subelemento (añade dos espacios al inicio)
+Listas numeradas (ordenadas):
+Usa números seguidos de un punto y un espacio.
 
-To build the project run:
+Markdown
+1. Primer paso
+2. Segundo paso
+4. Enlaces e Imágenes
+Enlaces: Pon el texto a mostrar entre corchetes y la URL entre paréntesis.
+[Visita Google](https://google.com)
 
-```bash
-ng build
-```
+Imágenes: Es exactamente igual que un enlace, pero con un signo de exclamación al principio.
+![Texto alternativo para ciegos](https://ruta-de-tu-imagen.jpg)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+5. Citas y Código
+Citas (Blockquotes): Usa el signo de mayor que (>) al inicio de la línea.
+> Esto es una cita inspiradora.
 
-## Running unit tests
+Código en línea: Envuelve comandos cortos con acentos graves (backticks).
+Usa la etiqueta `` en tu HTML.
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Bloques de código: Usa tres acentos graves (```) en la línea anterior y posterior a tu bloque de texto para compartir código de programación.
 
-```bash
-ng test
-```
+## Notas Personales
 
-## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
+Para genenerar un nuevo componente con Angular tenemos que ingresar el comando 
+"ng g c components/inicio"
+"ng g c nombreDeLaCarpeta/nombreDelComponente"
 
-```bash
-ng e2e
-```
+Despues automaticamente creara los 4 archivos principale para generar el componente.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Para inicar el proyecto que creamos tenemos ng serve -o
 
-## Additional Resources
+Si no funciona el comando recuerda ubicarte bien dentro de la carpeta del proyecto.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+
