@@ -69,6 +69,8 @@ Para genenerar un nuevo componente con Angular tenemos que ingresar el comando
 
 Despues automaticamente creara los 4 archivos principale para generar el componente.
 
+Cambio para que lo vea Ivan.
+
 
 
 
