@@ -8,10 +8,9 @@
   <nav class="navegacion-categorias" aria-label="Departamentos de decoración">
     <ul class="tabs tabs-fixed-width">
       <li class="tab" *ngFor="let departamento of departamentos; let i = index">
-        <a href="#productos"
-           [class.active]="departamentoSeleccionado === departamento"
-           [attr.aria-current]="departamentoSeleccionado === departamento ? 'page' : null"
-           (click)="$event.preventDefault(); seleccionarDepartamento(i)">
+        <a href="#productos" [class.active]="departamentoSeleccionado === departamento"
+          [attr.aria-current]="departamentoSeleccionado === departamento ? 'page' : null"
+          (click)="$event.preventDefault(); seleccionarDepartamento(i)">
           <i [class]="departamento.icono" aria-hidden="true"></i>
           <span>{{ departamento.nombre }}</span>
         </a>
@@ -19,8 +18,7 @@
     </ul>
   </nav>
 
-  <section id="productos" class="seccion-productos"
-           *ngIf="departamentoSeleccionado as categoria">
+  <section id="productos" class="seccion-productos" *ngIf="departamentoSeleccionado as categoria">
     <div class="cabecera-categoria center-align">
       <h2>{{ categoria.nombre }}</h2>
       <p>{{ categoria.descripcion }}</p>
@@ -36,6 +34,9 @@
             <span class="card-title">{{ producto.nombre }}</span>
             <p class="descripcion-producto">{{ producto.descripcion }}</p>
             <p class="precio">{{ producto.precio | currency:'MXN':'symbol':'1.2-2' }}</p>
+            <div class="card-panel white-text div-disponibilidad" [ngClass]="{'green': producto.disponible, red: !producto.disponible}">
+              {{ producto.disponible ? 'Disponible' : 'No disponible' }}
+            </div>
           </div>
         </article>
       </div>

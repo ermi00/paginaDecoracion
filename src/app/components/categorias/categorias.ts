@@ -14,9 +14,9 @@ export class Categorias {
       "icono": "fa-solid fa-fire-flame-curved",
       "descripcion": "Aromas y luz calida para crear ambientes acogedores",
       "productos": [
-        { nombre: 'Vela de vainilla', disponble: true, imagen: 'img/productos/vela-vainilla.jpg', precio: 189, descripcion: 'Vela aromática en vaso de vidrio.' },
-        { nombre: 'Vela de lavanda', disponble: false, imagen: 'img/productos/vela-lavanda.jpg', precio: 215, descripcion: 'Aroma floral para espacios relajantes.' },
-        { nombre: 'Vela de ámbar', disponble: true, imagen: 'img/productos/vela-ambar.jpg', precio: 249, descripcion: 'Fragancia cálida con acabado elegante.' }
+        { nombre: 'Vela de vainilla', disponible: true, imagen: 'img/productos/vela-vainilla.jpg', precio: 189, descripcion: 'Vela aromática en vaso de vidrio.' },
+        { nombre: 'Vela de lavanda', disponible: false, imagen: 'img/productos/vela-lavanda.jpg', precio: 215, descripcion: 'Aroma floral para espacios relajantes.' },
+        { nombre: 'Vela de ámbar', disponible: true, imagen: 'img/productos/vela-ambar.jpg', precio: 249, descripcion: 'Fragancia cálida con acabado elegante.' }
       ]
     },
     {
@@ -24,9 +24,9 @@ export class Categorias {
       "icono": 'fa-solid fa-lightbulb',
       "descripcion": 'Iluminación funcional y decorativa para cada rincón.',
       "productos": [
-        { nombre: 'Lámpara de mesa', disponble: false, imagen: 'img/productos/lampara-mesa.jpg', precio: 890, descripcion: 'Base de cerámica y pantalla textil.' },
-        { nombre: 'Lámpara de arco', disponble: true, imagen: 'img/productos/lampara-arco.jpg', precio: 2390, descripcion: 'Diseño curvo para sala o lectura.' },
-        { nombre: 'Lámpara colgante', disponble: false, imagen: 'img/productos/lampara-colgante.jpg', precio: 1490, descripcion: 'Iluminación moderna para comedor.' }
+        { nombre: 'Lámpara de mesa', disponible: false, imagen: 'img/productos/lampara-mesa.jpg', precio: 890, descripcion: 'Base de cerámica y pantalla textil.' },
+        { nombre: 'Lámpara de arco', disponible: true, imagen: 'img/productos/lampara-arco.jpg', precio: 2390, descripcion: 'Diseño curvo para sala o lectura.' },
+        { nombre: 'Lámpara colgante', disponible: false, imagen: 'img/productos/lampara-colgante.jpg', precio: 1490, descripcion: 'Iluminación moderna para comedor.' }
       ]
 
     },
@@ -34,9 +34,9 @@ export class Categorias {
       "nombre": 'Cuadros', "icono": 'fa-regular fa-image',
       "descripcion": 'Arte y composiciones para dar personalidad a tus paredes.',
       "productos": [
-        { nombre: 'Cuadro abstracto', disponble: false, imagen: ' img/productos/cuadro-abstracto.png', precio: 720, descripcion: 'Composición en tonos neutros.' },
-        { nombre: 'Cuadro botánico', disponble: false, imagen: 'img/productos/cuadro-botanico.jpg', precio: 650, descripcion: 'Ilustración de hojas con marco claro.' },
-        { nombre: 'Cuadro geométrico', disponble: true, imagen: 'img/productos/cuadro-geometrico.jpg', precio: 790, descripcion: 'Formas simples para espacios modernos.' }
+        { nombre: 'Cuadro abstracto', disponible: false, imagen: ' img/productos/cuadro-abstracto.png', precio: 720, descripcion: 'Composición en tonos neutros.' },
+        { nombre: 'Cuadro botánico', disponible: false, imagen: 'img/productos/cuadro-botanico.jpg', precio: 650, descripcion: 'Ilustración de hojas con marco claro.' },
+        { nombre: 'Cuadro geométrico', disponible: true, imagen: 'img/productos/cuadro-geometrico.jpg', precio: 790, descripcion: 'Formas simples para espacios modernos.' }
       ]
 
     },
@@ -45,9 +45,9 @@ export class Categorias {
       "icono": 'fa-solid fa-couch',
       "descripcion": 'Muebles de líneas limpias que aprovechan cada espacio.',
       "productos": [
-        { nombre: 'Sofá modular', disponble: true, imagen: 'img/productos/sofa-modular.jpg', precio: 12990, descripcion: 'Asientos versátiles en tela color arena.' },
-        { nombre: 'Mesa de centro', disponble: true, imagen: 'img/productos/mesa-centro.jpg', precio: 3290, descripcion: 'Superficie de madera y estructura ligera.' },
-        { nombre: 'Repisa flotante', disponble: false, imagen: 'img/productos/repisa-flotante.jpg', precio: 990, descripcion: 'Almacenamiento discreto para pared.' }
+        { nombre: 'Sofá modular', disponible: true, imagen: 'img/productos/sofa-modular.jpg', precio: 12990, descripcion: 'Asientos versátiles en tela color arena.' },
+        { nombre: 'Mesa de centro', disponible: true, imagen: 'img/productos/mesa-centro.jpg', precio: 3290, descripcion: 'Superficie de madera y estructura ligera.' },
+        { nombre: 'Repisa flotante', disponible: false, imagen: 'img/productos/repisa-flotante.jpg', precio: 990, descripcion: 'Almacenamiento discreto para pared.' }
       ]
 
     },
@@ -56,9 +56,9 @@ export class Categorias {
       "icono": 'fa-solid fa-vase',
       "descripcion": 'Detalles que aportan textura y estilo a tu hogar.',
       "productos": [
-        { nombre: 'Jarrón de cerámica', disponble: true, imagen: 'img/productos/jarron-ceramic.jpg', precio: 460, descripcion: 'Pieza artesanal en acabado mate.' },
-        { nombre: 'Espejo redondo', disponble: false, imagen: 'img/productos/espejo-redondo.png', precio: 1190, descripcion: 'Marco delgado para recibidor o sala.' },
-        { nombre: 'Bandeja decorativa', disponble: true, imagen: 'img/productos/bandeja-decorativa.jpg', precio: 390, descripcion: 'Accesorio para organizar pequeños objetos.' }
+        { nombre: 'Jarrón de cerámica', disponible: true, imagen: 'img/productos/jarron-ceramic.jpg', precio: 460, descripcion: 'Pieza artesanal en acabado mate.' },
+        { nombre: 'Espejo redondo', disponible: false, imagen: 'img/productos/espejo-redondo.png', precio: 1190, descripcion: 'Marco delgado para recibidor o sala.' },
+        { nombre: 'Bandeja decorativa', disponible: true, imagen: 'img/productos/bandeja-decorativa.jpg', precio: 390, descripcion: 'Accesorio para organizar pequeños objetos.' }
       ]
 
     }
