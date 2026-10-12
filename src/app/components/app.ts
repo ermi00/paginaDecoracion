@@ -4,24 +4,30 @@ declare var M: any;
 
 @Component({
   selector: 'app-root',
-  standalone: false,
-  styleUrl: './app.css',
   templateUrl: './app.html',
+  styleUrl: './app.css',
+  standalone: false, // quítalo si NO usas app-module.ts
 })
 export class App implements OnInit, AfterViewInit {
-  ngAfterViewInit(): void {
-    M.Sidenav.init(document.querySelectorAll('.sidenav'));
-  }
+  protected readonly title = signal('decoracion');
+
+  inicio = 'Inicio';
+  categorias = 'Categorias';
+  catalogo = 'Catalogo';
+  contacto = 'Contacto';
+  sucursales = 'Sucursales';
+  redesSociales = 'Redes Sociales';
+  logo = 'img/icon64.png';
+  mision = 'Mision & Vision';
+
   ngOnInit(): void {
     console.log('jQuery disponible:', $.fn.jquery);
   }
-  protected readonly title = signal('decoracion');
-  
-  inicio = "Inicio" 
-  categorias = "Categorias"
-  catalogo = "Catalogo"
-  contacto = "Contacto"
-  sucursales = "Sucursales"
-  redesSociales = "Redes Sociales"
-  logo = "/public/img/icon64.png"
+
+  ngAfterViewInit(): void {
+    // Inicializa los componentes de Materialize una vez que el HTML ya existe
+    if (typeof M !== 'undefined') {
+      M.AutoInit();
+    }
+  }
 }

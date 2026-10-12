@@ -53,7 +53,7 @@ export class Categorias {
     },
     {
       "nombre": 'Objetos decorativos', 
-      "icono": 'fa-solid fa-vase',
+      "icono": 'fa-solid fa-base',
       "descripcion": 'Detalles que aportan textura y estilo a tu hogar.',
       "productos": [
         { nombre: 'Jarrón de cerámica', disponible: true, imagen: 'img/productos/jarron-ceramic.jpg', precio: 460, descripcion: 'Pieza artesanal en acabado mate.' },

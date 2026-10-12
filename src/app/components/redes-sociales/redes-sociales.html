@@ -1,0 +1,25 @@
+<footer class="page-footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Redes Sociales</h5>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Enlaces</h5>
+                <ul *ngFor="let red of redes">
+                    <li>
+                        <a class="grey-text text-lighten-3" [href]="red.url" target="_blank">
+                            <i [class]="red.icono" [ngStyle]="{ color: red.color }"></i>{{ red.nombre }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            {{ leyenda }}
+            <a class="grey-text text-lighten-4 right" href="#!">Mas Enlaces</a>
+        </div>
+    </div>
+</footer>

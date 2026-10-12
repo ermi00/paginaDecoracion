@@ -74,37 +74,3 @@ Cambio para que lo vea Ivan.
 2do cambio para que lo mire Ivan.
 
 
-
-Guardar todo, en todos los archivos.
-
-```
-git add .
-```
-
-Descripcion del cambio que hiciste
-
-```
-git commit -m "Nombre del cambio"
-```
-
-Subir cambios a una rama en especifico
-
-```
-git push origin nombre-de-tu-rama
-```
-
-Descargar los ultimos cambios que se realizaron
-
-```
-git pull
-```
-
-Descargar los ultimos cambios que se realizaron de una rama en especifica
-
-```
-git pull origin nombre-de-la-rama
-```
-
-
-
-
