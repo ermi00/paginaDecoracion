@@ -5,7 +5,6 @@ import { getDatabase, ref, push, set, update, remove, onValue, Database } from "
 import { getAuth, signInAnonymously, onAuthStateChanged, User } from "firebase/auth";
 import { Observable } from "rxjs";
 import { initializeApp, getApps, getApp } from "firebase/app";
-import { error } from 'jquery';
 
 
 @Service()
@@ -25,7 +24,7 @@ export class Contacto {
             cancelar = onAuthStateChanged(this.auth, usuario => {
                 if (usuario) {
                     cancelar?.();
-                    reject(error);
+                    reject(usuario);
                 }
             }, error => {
                 cancelar?.();
