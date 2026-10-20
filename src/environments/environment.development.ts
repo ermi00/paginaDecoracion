@@ -7,6 +7,7 @@ export const environment = {
         storageBucket: "cooleros.firebasestorage.app",
         messagingSenderId: "931586907821",
         appId: "1:931586907821:web:9967fc3d1f6672e6cd7024",
-        measurementId: "G-HYX2H1LHGW"
+        measurementId: "G-HYX2H1LHGW",
+        databaseURL: "https://console.firebase.google.com/u/0/project/cooleros/database/cooleros-default-rtdb/data/~2F?hl=es-419"
     }
 };
