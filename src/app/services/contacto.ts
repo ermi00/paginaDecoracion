@@ -8,7 +8,7 @@ import { initializeApp, getApps, getApp } from "firebase/app";
 
 
 @Service()
-export class Contacto {
+export class ContactoService {
     private app = getApp.length ? getApp() : initializeApp(environment.firebaseConfig);
     private auth = getAuth(this.app);
     private database: Database = getDatabase(this.app);

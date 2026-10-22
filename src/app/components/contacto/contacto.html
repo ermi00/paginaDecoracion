@@ -1,102 +1,135 @@
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col s12 center-align">
-                <h2>Contactanos</h2>
-            </div>
-        </div>
+<p class="green-text" *ngIf="mensaje">{{ mensaje }}</p>
+<p class="red-text" *ngIf="error">{{ error }}</p>
 
-        <div class="row">
-            <div class="col s12 input-field">
-                <input type="text" name="nombre" id="nombre">
-                <label for="nombre"> {{ nombre }}</label>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col s12 input-field">
-                <input type="email" name="email" id="email">
-                <label for="email"> {{ email }}</label>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col s12 input-field">
-                <input type="number" name="telefono" id="telefono">
-                <label for="telefono"> {{ telefono }}</label>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col s12 input-field">
-                <input type="date" name="fecha" id="fecha">
-                <label for="fecha">{{ fecha }}</label>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col s12">
-                <label>Modalidad de entrega</label>
-                <ul>
-                    <li><label for=""><input type="radio" name="modalidad"><span>Recoger en sucursal</span></label></li>
-                    <li><label for=""><input type="radio" name="modalidad"><span>Entregar a domicilio</span></label>
-                    </li>
-                    <li><label for=""><input type="radio" name="modalidad"><span>Plataforma de envio</span></label></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col s12">
-                <label>Selecciona el tipo de producto</label>
-                <select name="tipoProducto" id="">
-                    <option value="">[ Opciones ]</option>
-                    <option value="pasteles">Pasteles</option>
-                    <option value="galletas">Galletas</option>
-                    <option value="bolillos">Bolillos</option>
-                    <option value="hotcakes">Hotcakes</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col s12">
-                <label>Selecciona tus complementos</label>
-                <ul>
-                    <li><label for=""><input type="checkbox" value="velasDePastel" name="complementos"><span>Velas de pastel</span></label></li>
-                    <li><label for=""><input type="checkbox" value="figuraDecorativa" name="complementos"><span>Figura decorativa</span></label></li>
-                    <li><label for=""><input type="checkbox" value="bolsaEcologica" name="complementos"><span>Bolsa ecologica</span></label></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col s12 input-field">
-                <textarea name="comentarios" id="comentarios" class="materialize-textarea"></textarea>
-                <label for="comentarios">Detalles del pedido</label>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col s12">
-                <p>Aceptas el avisiso de privacidad</p>
-                <div class="switch">
-                    <label for="">
-                        No
-                        <input type="checkbox" name="" id="">
-                        <span class="lever"></span>
-                        Si
-                    </label>
+<form #contactoForm="ngForm" (ngSubmit)="guardar()">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class=" s12 center-align">
+                    <h1>Contactanos...</h1>
                 </div>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col s12 center-align">
-                <input type="button" value="Cancelar" class="btn brown lighten-2">
-                <input type="button" value="Guardar" class="btn">
+        <div class="container">
+            <div class="row">
+                <div class=" s12 input-field">
+                    <input type="text" name="nombre" id="nombre" pattern="[A-Za-z\sÁÉÍÓÚáéíóúüÜÑñ]{10,80}"
+                        minlength="10" maxlength="80" data-length="80" class="validate" required #nombre="ngModel"/>
+                    <label for="nombre">{{nombre}}</label>
+                    <span class="helper-text" data-error="Dato Invalido" data-success="Correcto"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 input-field">
+                    <input type="email" name="email" id="email" minlength="20" maxlength="70" data-length="70"
+                        class="validate" required />
+                    <label for="email">{{email}}</label>
+                    <span class="helper-text" data-error="Dato Invalido" data-success="Correcto"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 input-field">
+                    <input type="text" name="telefono" id="telefono" pattern="[0-9]{10}" maxlength="10" data-length="10"
+                        class="validate" required />
+                    <label for="telefono">{{telefono}}</label>
+                    <span class="helper-text" data-error="Dato Invalido" data-success="Correcto"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <input type="date" name="fecha" id="fecha">
+                    <label for="fecha">{{fecha}}</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <label for="">Modalidad de entrega</label>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" name="modalidad" />
+                                <span>Recoger en Sucursal</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="modalidad" />
+                                <span>Envio a domicilio</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="modalidad" />
+                                <span>Recoger en sucursal</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <label>Selecciona el tipo de Producto:</label>
+                        <select name="tipoProducto" id="tipoProducto" class="validate" required>
+                            <option value="">[Selecciona]</option>
+                            <option value="pastel">Pastel</option>
+                            <option value="galletas">Galletas</option>
+                            <option value="panaderia">Panaderia</option>
+                            <option value="bolleria">Bolleria</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <label>Selecciona tus complementso:</label>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="complementos" value="velas">
+                                    <span>Velas de pastel</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="complementos" value="Figura decorativa">
+                                    <span>Figura Decorativa</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="complementos" value="Bolsas ecologica">
+                                    <span>Bolsa Ecologica</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 input-field">
+                        <textarea name="comentarios" id="comentarios" class="materialize-textarea validate"
+                            maxlength="200" pattern="[A-Za-z\sÁÉÍÓÚáéíóúÜüÑñ]{0,200}" data-length="200"></textarea>
+                        <label for="comentarios">Detalles del pedido</label>
+                        <span class="helper-text" data-error="Dato Invalido" data-success="Correcto"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <p>Aceptas el aviso de privacidad</p>
+                        <div class="switch">
+                            <label>
+                                No
+                                <input type="checkbox" name="aceptasAviso">
+                                <span class="lever"></span>
+                                Si
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <input type="submit" value="Guardar" class="btn brown ligthen-2" />
+                        <input type="button" value="Cancelar" class="btn  orange ligthen-2" />
+                    </div>
+                </div>
             </div>
         </div>
-
-    </div>
-</section>
+    </section>
+</form>
